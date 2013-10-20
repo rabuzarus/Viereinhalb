@@ -550,7 +550,8 @@ nav .nav-menu-icon {
   margin: 0px 10px;
 }
 nav .nav-menu-icon.selected {
-  background-color: #364e59;
+ /* background-color: #364e59;*/
+  border-bottom: 3px solid #ccc;
 }
 nav .nav-menu-icon img {
   width: 22px;
