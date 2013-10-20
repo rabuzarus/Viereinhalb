@@ -8,25 +8,25 @@
 	<ul>
 		{{if $nav.community}}
 			<li id="nav-community-link" class="nav-menu {{$sel.community}}">
-				<a class="{{$nav.community.2}}" href="{{$nav.community.0}}" title="{{$nav.community.3}}" >{{$nav.community.1}}</a>
+				<a class="{{$nav.community.2}}" href="{{$nav.community.0}}" title="{{$nav.community.3}}" ><i class="icon-bullseye"></i></a>
 			</li>
 		{{/if}}
 		
 		{{if $nav.network}}
 			<li id="nav-network-link" class="nav-menu {{$sel.network}}">
-				<a class="{{$nav.network.2}}" href="{{$nav.network.0}}" title="{{$nav.network.3}}" >{{$nav.network.1}}</a>
+				<a class="{{$nav.network.2}}" href="{{$nav.network.0}}" title="{{$nav.network.3}}" ><i class="icon-th"></i></a>
 				<span id="net-update" class="nav-notify"></span>
 			</li>
 		{{/if}}
 		{{if $nav.home}}
 			<li id="nav-home-link" class="nav-menu {{$sel.home}}">
-				<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
+				<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" ><i class="icon-home"></i></a>
 				<span id="home-update" class="nav-notify"></span>
 			</li>
 		{{/if}}
 		{{if $nav.messages}}
 			<li id="nav-messages-linkmenu" class="nav-menu">
-				<a href="{{$nav.messages.0}}" rel="#nav-messages-menu" title="{{$nav.messages.1}}">{{$nav.messages.1}}
+				<a href="{{$nav.messages.0}}" rel="#nav-messages-menu" title="{{$nav.messages.1}}"><i class="icon-folder-open-alt"></i>
                         	<span id="mail-update" class="nav-notify"></span></a>
                         	<ul id="nav-messages-menu" class="menu-popup">
                                 	<li id="nav-messages-see-all"><a href="{{$nav.messages.0}}">{{$nav.messages.1}}</a></li>
@@ -35,7 +35,7 @@
                         </li>           
                 {{/if}}
 
-		<li id="nav-site-linkmenu" class="nav-menu-icon"><a href="#" rel="#nav-site-menu"><span class="icon s22 gear"></span></a>
+		<li id="nav-site-linkmenu" class="nav-menu-icon"><a href="#" rel="#nav-site-menu"><span class="icon-cog"></span></a>
 			<ul id="nav-site-menu" class="menu-popup">
 				{{if $nav.manage}}<li><a class="{{$nav.manage.2}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}">{{$nav.manage.1}}</a></li>{{/if}}				
 				{{if $nav.help}} <li><a class="{{$nav.help.2}}" target="friendica-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a></li>{{/if}}
@@ -50,7 +50,7 @@
 			</ul>		
 		</li>
 		{{if $nav.notifications}}
-			<li  id="nav-notifications-linkmenu" class="nav-menu-icon"><a href="{{$nav.notifications.0}}" rel="#nav-notifications-menu" title="{{$nav.notifications.1}}"><span class="icon s22 notify"></span></a>
+			<li  id="nav-notifications-linkmenu" class="nav-menu-icon"><a href="{{$nav.notifications.0}}" rel="#nav-notifications-menu" title="{{$nav.notifications.1}}"><span class="icon-bell-alt"></span></a>
 				<span id="notify-update" class="nav-notify"></span>
 				<ul id="nav-notifications-menu" class="menu-popup">
 					<li id="nav-notifications-mark-all"><a href="#" onclick="notifyMarkAll(); return false;">{{$nav.notifications.mark.1}}</a></li>
@@ -69,7 +69,7 @@
 -->
 
 		{{if $userinfo}}
-      <li id="nav-user-linklabel" class="nav-menu"><a href="#" rel="#nav-user-menu" title="{{$sitelocation}}">{{$userinfo.name}}
+      <li id="nav-user-linklabel" class="nav-menu"><a href="#" rel="#nav-user-menu" title="{{$sitelocation}}">
       <span id="intro-update" class="nav-notify"></span></a>			<li id="nav-user-linkmenu" class="nav-menu-icon"><a href="#" rel="#nav-user-menu" title="{{$sitelocation}}"><img src="{{$userinfo.icon}}" alt="{{$userinfo.name}}"></a>
 				<ul id="nav-user-menu" class="menu-popup">
 				          {{if $nav.notifications}}<li><a class="{{$nav.notifications.2}}" href="{{$nav.notifications.0}}" title="{{$nav.notifications.3}}" >{{$nav.introductions.1}}</a><span id="intro-update-li" class="nav-notify"></span></li>{{/if}}
@@ -107,39 +107,3 @@
 	<li><a href="{0}"><img data-src="{1}">{2} <span class="notif-when">{3}</span></a></li>
 </ul>
 
-{{*
-
-{{if $nav.logout}}<a id="nav-logout-link" class="nav-link {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" >{{$nav.logout.1}}</a> {{/if}}
-{{if $nav.login}}<a id="nav-login-link" class="nav-login-link {{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" >{{$nav.login.1}}</a> {{/if}}
-
-<span id="nav-link-wrapper" >
-
-{{if $nav.register}}<a id="nav-register-link" class="nav-commlink {{$nav.register.2}}" href="{{$nav.register.0}}" title="{{$nav.register.3}}" >{{$nav.register.1}}</a>{{/if}}
-
-<a id="nav-help-link" class="nav-link {{$nav.help.2}}" target="friendica-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a>
-	
-{{if $nav.apps}}<a id="nav-apps-link" class="nav-link {{$nav.apps.2}}" href="{{$nav.apps.0}}" title="{{$nav.apps.3}}" >{{$nav.apps.1}}</a>{{/if}}
-
-<a id="nav-search-link" class="nav-link {{$nav.search.2}}" href="{{$nav.search.0}}" title="{{$nav.search.3}}" >{{$nav.search.1}}</a>
-<a id="nav-directory-link" class="nav-link {{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}" >{{$nav.directory.1}}</a>
-
-{{if $nav.admin}}<a id="nav-admin-link" class="nav-link {{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" >{{$nav.admin.1}}</a>{{/if}}
-
-{{if $nav.notifications}}
-<a id="nav-notify-link" class="nav-commlink {{$nav.notifications.2}}" href="{{$nav.notifications.0}}" title="{{$nav.notifications.3}}" >{{$nav.notifications.1}}</a>
-<span id="notify-update" class="nav-ajax-left"></span>
-{{/if}}
-{{if $nav.messages}}
-<a id="nav-messages-link" class="nav-commlink {{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
-<span id="mail-update" class="nav-ajax-left"></span>
-{{/if}}
-
-{{if $nav.manage}}<a id="nav-manage-link" class="nav-commlink {{$nav.manage.2}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}">{{$nav.manage.1}}</a>{{/if}}
-{{if $nav.settings}}<a id="nav-settings-link" class="nav-link {{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}">{{$nav.settings.1}}</a>{{/if}}
-{{if $nav.profiles}}<a id="nav-profiles-link" class="nav-link {{$nav.profiles.2}}" href="{{$nav.profiles.0}}" title="{{$nav.profiles.3}}" >{{$nav.profiles.1}}</a>{{/if}}
-
-
-</span>
-<span id="nav-end"></span>
-<span id="banner">{{$banner}}</span>
-*}}
