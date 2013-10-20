@@ -6,11 +6,7 @@
 </header>
 <nav>
 	<ul>
-		{{if $nav.community}}
-			<li id="nav-community-link" class="nav-menu {{$sel.community}}">
-				<a class="{{$nav.community.2}}" href="{{$nav.community.0}}" title="{{$nav.community.3}}" ><i class="icon-bullseye"></i></a>
-			</li>
-		{{/if}}
+
 		
 		{{if $nav.network}}
 			<li id="nav-network-link" class="nav-menu {{$sel.network}}">
@@ -24,6 +20,14 @@
 				<span id="home-update" class="nav-notify"></span>
 			</li>
 		{{/if}}
+		
+		
+				{{if $nav.community}}
+			<li id="nav-community-link" class="nav-menu {{$sel.community}}">
+				<a class="{{$nav.community.2}}" href="{{$nav.community.0}}" title="{{$nav.community.3}}" ><i class="icon-bullseye"></i></a>
+			</li>
+		{{/if}}
+		
 		{{if $nav.messages}}
 			<li id="nav-messages-linkmenu" class="nav-menu">
 				<a href="{{$nav.messages.0}}" rel="#nav-messages-menu" title="{{$nav.messages.1}}"><i class="icon-envelope-alt"></i>
