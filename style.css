@@ -522,7 +522,7 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  margin: 0px;
+  margin: 0px 0px 0px 10px;
   float: left;
 }
 nav ul li .menu-popup {
@@ -624,7 +624,7 @@ nav #nav-site-linkmenu .menu-popup {
 }
 nav #nav-site-linkmenu {
   margin-left: 5px;
-  margin-right: 0px;
+  margin-right: 5px;
 }
 nav #nav-notifications-linkmenu {
   margin-left: 5px;
