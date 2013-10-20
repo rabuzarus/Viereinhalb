@@ -551,7 +551,7 @@ nav .nav-menu-icon {
 }
 nav .nav-menu-icon.selected {
  /* background-color: #364e59;*/
-  border-bottom: 3px solid #ccc;
+
 }
 nav .nav-menu-icon img {
   width: 22px;
@@ -636,7 +636,7 @@ nav #nav-notifications-linkmenu.on .icon.s22.notify, nav #nav-notifications-link
 nav #nav-messages-linkmenu.selected,
 nav #nav-user-linklabel.selected,
 nav #nav-apps-link.selected {
-  background-color: #364e59;
+ /* background-color: #364e59;*/
 }
 
 /* nav #nav-community-link { */
