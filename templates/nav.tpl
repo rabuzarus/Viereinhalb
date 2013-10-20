@@ -26,7 +26,7 @@
 		{{/if}}
 		{{if $nav.messages}}
 			<li id="nav-messages-linkmenu" class="nav-menu">
-				<a href="{{$nav.messages.0}}" rel="#nav-messages-menu" title="{{$nav.messages.1}}"><i class="icon-envelope"></i>
+				<a href="{{$nav.messages.0}}" rel="#nav-messages-menu" title="{{$nav.messages.1}}"><i class="icon-envelope-alt"></i>
                         	<span id="mail-update" class="nav-notify"></span></a>
                         	<ul id="nav-messages-menu" class="menu-popup">
                                 	<li id="nav-messages-see-all"><a href="{{$nav.messages.0}}">{{$nav.messages.1}}</a></li>
@@ -35,20 +35,8 @@
                         </li>           
                 {{/if}}
 
-		<li id="nav-site-linkmenu" class="nav-menu-icon"><a href="#" rel="#nav-site-menu"><span class="icon-cog"></span></a>
-			<ul id="nav-site-menu" class="menu-popup">
-				{{if $nav.manage}}<li><a class="{{$nav.manage.2}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}">{{$nav.manage.1}}</a></li>{{/if}}				
-				{{if $nav.help}} <li><a class="{{$nav.help.2}}" target="friendica-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a></li>{{/if}}
-				<li><a class="{{$nav.search.2}}" href="friendica" title="Site Info / Impressum" >Info/Impressum</a></li>
-				<li><a class="{{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}" >{{$nav.directory.1}}</a></li>
-				{{if $nav.delegations}}<li><a class="{{$nav.delegations.2}}" href="{{$nav.delegations.0}}" title="{{$nav.delegations.3}}">{{$nav.delegations.1}}</a></li>{{/if}}
-				{{if $nav.settings}}<li><a class="{{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}">{{$nav.settings.1}}</a></li>{{/if}}
-				{{if $nav.admin}}<li><a class="{{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" >{{$nav.admin.1}}</a></li>{{/if}}
 
-				{{if $nav.logout}}<li><a class="menu-sep {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" >{{$nav.logout.1}}</a></li>{{/if}}
-				{{if $nav.login}}<li><a class="{{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" >{{$nav.login.1}}</a><li>{{/if}}
-			</ul>		
-		</li>
+		
 		{{if $nav.notifications}}
 			<li  id="nav-notifications-linkmenu" class="nav-menu-icon"><a href="{{$nav.notifications.0}}" rel="#nav-notifications-menu" title="{{$nav.notifications.1}}"><span class="icon-bell-alt"></span></a>
 				<span id="notify-update" class="nav-notify"></span>
@@ -82,6 +70,21 @@
 			</li>
 		{{/if}}
 		
+
+		<li id="nav-site-linkmenu" class="nav-menu-icon"><a href="#" rel="#nav-site-menu"><span class="icon-cog"></span></a>
+			<ul id="nav-site-menu" class="menu-popup">
+				{{if $nav.manage}}<li><a class="{{$nav.manage.2}}" href="{{$nav.manage.0}}" title="{{$nav.manage.3}}">{{$nav.manage.1}}</a></li>{{/if}}				
+				{{if $nav.help}} <li><a class="{{$nav.help.2}}" target="friendica-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a></li>{{/if}}
+				<li><a class="{{$nav.search.2}}" href="friendica" title="Site Info / Impressum" >Info/Impressum</a></li>
+				<li><a class="{{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}" >{{$nav.directory.1}}</a></li>
+				{{if $nav.delegations}}<li><a class="{{$nav.delegations.2}}" href="{{$nav.delegations.0}}" title="{{$nav.delegations.3}}">{{$nav.delegations.1}}</a></li>{{/if}}
+				{{if $nav.settings}}<li><a class="{{$nav.settings.2}}" href="{{$nav.settings.0}}" title="{{$nav.settings.3}}">{{$nav.settings.1}}</a></li>{{/if}}
+				{{if $nav.admin}}<li><a class="{{$nav.admin.2}}" href="{{$nav.admin.0}}" title="{{$nav.admin.3}}" >{{$nav.admin.1}}</a></li>{{/if}}
+
+				{{if $nav.logout}}<li><a class="menu-sep {{$nav.logout.2}}" href="{{$nav.logout.0}}" title="{{$nav.logout.3}}" >{{$nav.logout.1}}</a></li>{{/if}}
+				{{if $nav.login}}<li><a class="{{$nav.login.2}}" href="{{$nav.login.0}}" title="{{$nav.login.3}}" >{{$nav.login.1}}</a><li>{{/if}}
+			</ul>		
+		</li>
 
 		
 		{{if $nav.apps}}
