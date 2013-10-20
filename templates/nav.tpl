@@ -26,7 +26,7 @@
 		{{/if}}
 		{{if $nav.messages}}
 			<li id="nav-messages-linkmenu" class="nav-menu">
-				<a href="{{$nav.messages.0}}" rel="#nav-messages-menu" title="{{$nav.messages.1}}"><i class="icon-folder-open-alt"></i>
+				<a href="{{$nav.messages.0}}" rel="#nav-messages-menu" title="{{$nav.messages.1}}"><i class="icon-envelope"></i>
                         	<span id="mail-update" class="nav-notify"></span></a>
                         	<ul id="nav-messages-menu" class="menu-popup">
                                 	<li id="nav-messages-see-all"><a href="{{$nav.messages.0}}">{{$nav.messages.1}}</a></li>
@@ -82,17 +82,11 @@
 			</li>
 		{{/if}}
 		
-		{{if $nav.search}}
-                <li id="search-box">
-                        <form method="get" action="{{$nav.search.0}}">
-                        	<input id="search-text" class="nav-menu-search" type="text" value="" name="search">
-                        </form>
-                </li>
-		{{/if}}
+
 		
 		{{if $nav.apps}}
 			<li id="nav-apps-link" class="nav-menu {{$sel.apps}}">
-				<a class=" {{$nav.apps.2}}" href="#" rel="#nav-apps-menu" title="{{$nav.apps.3}}" >{{$nav.apps.1}}</a>
+				<a class=" {{$nav.apps.2}}" href="#" rel="#nav-apps-menu" title="{{$nav.apps.3}}" ><i class="icon-reorder"></i></a>
 				<ul id="nav-apps-menu" class="menu-popup">
 					{{foreach $apps as $ap}}
 					<li>{{$ap}}</li>
@@ -101,6 +95,14 @@
 			</li>
 		{{/if}}
 	</ul>
+
+		{{if $nav.search}}
+                <li id="search-box">
+                        <form method="get" action="{{$nav.search.0}}">
+                        	<input id="search-text" class="nav-menu-search" type="text" value="" name="search">
+                        </form>
+                </li>
+		{{/if}}
 
 </nav>
 <ul id="nav-notifications-template" style="display:none;" rel="template">
