@@ -39,6 +39,16 @@
                         </li>           
                 {{/if}}
 
+		{{if $nav.apps}}
+			<li id="nav-apps-link" class="nav-menu {{$sel.apps}}">
+				<a class=" {{$nav.apps.2}}" href="#" rel="#nav-apps-menu" title="{{$nav.apps.3}}" ><i class="icon-reorder"></i></a>
+				<ul id="nav-apps-menu" class="menu-popup">
+					{{foreach $apps as $ap}}
+					<li>{{$ap}}</li>
+					{{/foreach}}
+				</ul>
+			</li>
+		{{/if}}
 
 		
 		{{if $nav.notifications}}
@@ -52,13 +62,7 @@
 			</li>		
 		{{/if}}		
 		
-<!--		
-		{{if $nav.help}} 
-		<li id="nav-help-link" class="nav-menu {{$sel.help}}">
-			<a class="{{$nav.help.2}}" target="friendica-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a>
-		</li>
-		{{/if}}
--->
+
 
 		{{if $userinfo}}
 		
@@ -91,16 +95,7 @@
 		</li>
 
 		
-		{{if $nav.apps}}
-			<li id="nav-apps-link" class="nav-menu {{$sel.apps}}">
-				<a class=" {{$nav.apps.2}}" href="#" rel="#nav-apps-menu" title="{{$nav.apps.3}}" ><i class="icon-reorder"></i></a>
-				<ul id="nav-apps-menu" class="menu-popup">
-					{{foreach $apps as $ap}}
-					<li>{{$ap}}</li>
-					{{/foreach}}
-				</ul>
-			</li>
-		{{/if}}
+
 
 		{{if $nav.search}}
                 <li id="search-box">
@@ -110,6 +105,13 @@
                 </li>
 		{{/if}}
 
+<!--		
+		{{if $nav.help}} 
+		<li id="nav-help-link" class="nav-menu {{$sel.help}}">
+			<a class="{{$nav.help.2}}" target="friendica-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a>
+		</li>
+		{{/if}}
+-->
 
 	</ul>
 
