@@ -146,14 +146,14 @@ img {
 
 .wall-item-decor .icon.s22.star {
   color: #888;
-  margin-top: 30px;
-  margin-left: -5px;
+  margin-top: 0px;
+  margin-left: -30px;
 }
 .wall-item-decor .icon.s22.star:hover {
   color: #000;
   text-decoration: none;
-  margin-top: 30px;
-  margin-left: -5px;
+  margin-top: 0px;
+  margin-left: -30px;
 }
 
 
