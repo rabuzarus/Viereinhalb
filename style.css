@@ -325,17 +325,15 @@ code {
 }
 #panel {
   position: absolute;
+  font-size: 12px;
   width: 10em;
   background: #ffffff;
   color: #2d2d2d;
   margin: 0px;
-  padding: 1em;
+  padding-left: 8px;
   list-style: none;
-  border: 3px solid #364e59;
+  border: 1px solid #aaaaaa;
   z-index: 100000;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 /* tool */
 .tool {
