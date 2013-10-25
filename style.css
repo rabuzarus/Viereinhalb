@@ -505,7 +505,10 @@ nav .icon {
   color: #ccc;
 }
 
-nav a:active,
+nav a:active {
+  color: #fff;
+}
+
 nav a:visited,
 nav a:link,
 nav a {
