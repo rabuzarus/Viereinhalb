@@ -340,11 +340,11 @@ code {
 #panel {
   position: absolute;
   font-size: 12px;
-  width: 10em;
+  width: 150px;
   background: #ffffff;
   color: #2d2d2d;
-  margin: 0px;
-  padding-left: 8px;
+  margin: 0px 0px 0px -150px;
+  padding-left: 3px;
   list-style: none;
   border: 1px solid #aaaaaa;
   z-index: 100000;
