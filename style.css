@@ -505,10 +505,7 @@ nav .icon {
   color: #ccc;
 }
 
-nav a:active {
-  color: #fff;
-}
-
+nav a:active,
 nav a:visited,
 nav a:link,
 nav a {
@@ -595,7 +592,7 @@ nav .nav-menu {
 }*/
 
 nav .nav-menu.selected {
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid #fff;
 }
 
 nav .nav-menu:hover {
