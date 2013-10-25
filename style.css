@@ -586,6 +586,11 @@ nav .nav-menu {
   color: #ccc;
   font-weight: normal;
 }
+
+nav .nav-menu.active a {
+  color: white;
+}
+
 /*nav .nav-menu.selected a {
   color: white;
 }*/
