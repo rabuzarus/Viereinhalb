@@ -587,16 +587,15 @@ nav .nav-menu {
   font-weight: normal;
 }
 
-nav .nav-menu.active a {
-  color: white;
-}
 
 /*nav .nav-menu.selected a {
   color: white;
 }*/
 
 nav .nav-menu.selected {
-  border-bottom: 3px solid #ccc;}
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  }
 
 nav .nav-menu:hover {
     color: #fff;
