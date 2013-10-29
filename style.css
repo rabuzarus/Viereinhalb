@@ -147,19 +147,20 @@ img {
 .wall-item-decor .icon.s22.star {
   color: #888;
   margin-top: 0px;
-  margin-left: -30px;
+  margin-left: -3px;
 }
 .wall-item-decor .icon.s22.star:hover {
   color: #000;
   text-decoration: none;
   margin-top: 0px;
-  margin-left: -30px;
+  margin-left: -3px;
 }
 
 
 .icon.s22 {
+	font-size: 14px;
   min-width: 22px;
-  height: 22px;
+  height: 16px;
 }
 
 .icon.s22.text {
