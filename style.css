@@ -137,9 +137,11 @@ img {
   font-size: 10px;
 }
 .wall-item-decor .icon.s22.lock {
+  margin-left: -10px;
   color: #888;
 }
 .wall-item-decor .icon.s22.lock:hover {
+  margin-left: -10px;
   color: #000;
   text-decoration: none;
 }
@@ -147,13 +149,13 @@ img {
 .wall-item-decor .icon.s22.star {
   color: #888;
   margin-top: 0px;
-  margin-left: -3px;
+  margin-left: -13px;
 }
 .wall-item-decor .icon.s22.star:hover {
   color: #000;
   text-decoration: none;
   margin-top: 0px;
-  margin-left: -3px;
+  margin-left: -13px;
 }
 
 
