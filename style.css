@@ -138,7 +138,7 @@ img {
 }
 .wall-item-decor .icon.s22.lock {
   margin-left: -10px;
-  opacity: 0.5;
+  opacity: 0.2;
   color: #888;
 }
 .wall-item-decor .icon.s22.lock:hover {
@@ -149,7 +149,7 @@ img {
 
 .wall-item-decor .icon.s22.star {
   color: #888;
-  opacity: 0.5;
+  opacity: 0.2;
   margin-top: 0px;
   margin-left: -13px;
 }
