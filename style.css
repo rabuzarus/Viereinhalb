@@ -986,6 +986,12 @@ section {
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
 }
+
+section.minimal {
+  top: 0px;
+  left: 0px;
+}
+
 /* wall item */
 .tread-wrapper {
 border-bottom: 1px solid #D2D2D2;
