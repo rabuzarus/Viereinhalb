@@ -129,8 +129,8 @@ img {
   font-size: 10px;
 }
 .icon.s16 {
-  min-width: 16px;
-  height: 16px;
+  min-width: 22px;
+  height: 20px;
 }
 .icon.s16.text {
   padding: 4px 0px 0px 20px;
@@ -849,8 +849,8 @@ aside #dfrn-request-link:hover {
   background-color: #36c;
 }
 aside #profiles-menu {
-  width: 14em;
-  left: 10px;
+  width: 15em;
+  left: 65px;
 }
 
 aside #search-text, aside #side-follow-url, aside #side-peoplefind-url {
