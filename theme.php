@@ -11,9 +11,12 @@
 function viereinhalb_init(&$a) {
 set_template_engine($a, 'smarty3');
 
+$baseurl = $a->get_baseurl();
+
 $a->theme_info = array();
 
 $a->page['htmlhead'] .= <<< EOT
+<script type="text/javascript" src="$baseurl/view/theme/viereinhalb/js/jquery.divgrow-1.3.1.f1.min.js"></script>
 <script>
 function insertFormatting(comment,BBcode,id) {
 
@@ -26,13 +29,27 @@ function insertFormatting(comment,BBcode,id) {
 			$("#comment-edit-text-" + id).val(tmpStr);
 		}
 
+function collapseHeight(elems) {
+   var elemName = '.wall-item-body:not(.divmore)';
+   if(typeof elems != 'undefined') {
+     elemName = elems + ' ' + elemName;
+   }
+   $(elemName).each(function() {
+     if($(this).height() > 450) {
+       $('html').height($('html').height());
+       $(this).divgrow({ initialHeight: 400, showBrackets: false, speed: 0 });
+       $(this).addClass('divmore');
+       $('html').height('auto');
+     }
+   });
+
 	textarea = document.getElementById("comment-edit-text-" +id);
 	if (document.selection) {
 		textarea.focus();
 		selected = document.selection.createRange();
 		if (BBcode == "url"){
 			selected.text = "["+BBcode+"]" + "http://" +  selected.text + "[/"+BBcode+"]";
-			} else			
+			} else
 		selected.text = "["+BBcode+"]" + selected.text + "[/"+BBcode+"]";
 	} else if (textarea.selectionStart || textarea.selectionStart == "0") {
 		var start = textarea.selectionStart;
@@ -63,49 +80,7 @@ function cmtBbClose(id) {
 	$("#comment-edit-bb-" + id).hide();
 }
 
-/*
-$(document).ready(function() {
 
-$('html').click(function() { $("#nav-notifications-menu" ).hide(); });
-
-$('.group-edit-icon').hover(
-	function() {
-		$(this).addClass('icon'); $(this).removeClass('iconspacer');},
-	function() {
-		$(this).removeClass('icon'); $(this).addClass('iconspacer');}
-	);
-
-$('.sidebar-group-element').hover(
-	function() {
-		id = $(this).attr('id');
-		$('#edit-' + id).addClass('icon'); $('#edit-' + id).removeClass('iconspacer');},
-
-	function() {
-		id = $(this).attr('id');
-		$('#edit-' + id).removeClass('icon');$('#edit-' + id).addClass('iconspacer');}
-	);
-
-
-$('.savedsearchdrop').hover(
-	function() {
-		$(this).addClass('drop'); $(this).addClass('icon'); $(this).removeClass('iconspacer');},
-	function() {
-		$(this).removeClass('drop'); $(this).removeClass('icon'); $(this).addClass('iconspacer');}
-	);
-
-$('.savedsearchterm').hover(
-	function() {
-		id = $(this).attr('id');
-		$('#drop-' + id).addClass('icon'); 	$('#drop-' + id).addClass('drophide'); $('#drop-' + id).removeClass('iconspacer');},
-
-	function() {
-		id = $(this).attr('id');
-		$('#drop-' + id).removeClass('icon');$('#drop-' + id).removeClass('drophide'); $('#drop-' + id).addClass('iconspacer');}
-	);
-
-});
-
-*/
 </script>
 EOT;
 }
