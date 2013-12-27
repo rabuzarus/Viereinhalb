@@ -456,6 +456,11 @@ div.jGrowl div.info {
   color: #ffffff;
   padding-left: 58px;
 }
+div.jGrowl.top-right {
+  top: 40px;
+  z-index: 90;
+}
+
 /* header */
 header {
   position: fixed;
@@ -1050,6 +1055,14 @@ border-bottom: 1px solid #D2D2D2;
   color: #999;
   font-size: 12px;
 }
+
+.wall-item-network {
+  color: #999;
+  font-size: 12px;
+  text-align: right;
+  float: right;
+}
+
 .wall-item-location {
   width: 350px;
   float: left;
