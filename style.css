@@ -352,7 +352,7 @@ code {
   padding-left: 3px;
   list-style: none;
   border: 1px solid #aaaaaa;
-  z-index: 100000;
+  z-index: 100;
 }
 /* tool */
 .tool {
