@@ -180,6 +180,10 @@ img {
 	cursor: url('lock.cur'), pointer;
 }
 
+.like-rotator {
+  margin-left: -10px;
+}
+
 #birthday-title, #event-title {
   font-weight: bold;
   margin-bottom: 5px;
