@@ -1,7 +1,7 @@
 <?php
 /**
  * Name: Viereinhalb
- * Version: 0.9.2
+ * Version: 1.1
  * Author: Fabio <http://kirgroup.com/profile/fabrixxm>
  * Author: Ike <http://pirati.ca/profile/heluecht>
  * Maintainer: Oliver <https://toktan.org/profile/oha>
@@ -16,8 +16,8 @@ $baseurl = $a->get_baseurl();
 $a->theme_info = array();
 
 $a->page['htmlhead'] .= <<< EOT
-<script type="text/javascript" src="$baseurl/view/theme/viereinhalb/js/jquery.divgrow-1.3.1.f1.min.js"></script>
-<script>
+<script type="text/javascript">
+
 function insertFormatting(comment,BBcode,id) {
 
 		var tmpStr = $("#comment-edit-text-" + id).val();
@@ -28,20 +28,6 @@ function insertFormatting(comment,BBcode,id) {
 			openMenu("comment-edit-submit-wrapper-" + id);
 			$("#comment-edit-text-" + id).val(tmpStr);
 		}
-
-function collapseHeight(elems) {
-   var elemName = '.wall-item-body:not(.divmore)';
-   if(typeof elems != 'undefined') {
-     elemName = elems + ' ' + elemName;
-   }
-   $(elemName).each(function() {
-     if($(this).height() > 450) {
-       $('html').height($('html').height());
-       $(this).divgrow({ initialHeight: 400, showBrackets: false, speed: 0 });
-       $(this).addClass('divmore');
-       $('html').height('auto');
-     }
-   });
 
 	textarea = document.getElementById("comment-edit-text-" +id);
 	if (document.selection) {
