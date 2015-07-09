@@ -26,8 +26,8 @@
 	{{/foreach}}
 
 	<div id="login-extra-links">
-		{{if $register}}<a href="register" title="{{$register.title}}" id="register-link">{{$register.desc}}</a>{{/if}}
-        <a href="lostpass" title="{{$lostpass}}" id="lost-password-link" >{{$lostlink}}</a>
+		{{if $register}}<a href="register" title="{{$register.title}}" id="register-link">{{$register.desc}}</a></br>{{/if}}
+		<a href="lostpass" title="{{$lostpass}}" id="lost-password-link" >{{$lostlink}}</a>
 	</div>	
 	
 </form>

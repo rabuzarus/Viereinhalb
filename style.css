@@ -84,7 +84,7 @@ img {
         margin-right: 1em;
 }
 
-#adminpage table {width:100%; border-bottom: 1p solid #000000; margin: 5px 0px;}
+#adminpage table {width:100%; border-bottom: 1px solid #000000; margin: 5px 0px;}
 #adminpage table th { text-align: left;}
 #adminpage td .icon { float: left;}
 #adminpage table#users img { width: 16px; height: 16px; }
@@ -201,7 +201,7 @@ div.pager {
   padding: 1%;
   height: 1em;
   margin-bottom: 5px;
-}*/
+}
 
 .birthday-notice {
   margin-top: 5px;
@@ -1827,7 +1827,7 @@ ul.tabs a:hover, #event-notice:hover, #birthday-notice:hover, ul.tabs li .active
   width: 200px;
 }
 .field input, .field textarea {
-  width: 400px;
+  max-width: 400px;
 }
 .field textarea {
   height: 100px;
@@ -1871,6 +1871,12 @@ ul.tabs a:hover, #event-notice:hover, #birthday-notice:hover, ul.tabs li .active
 }
 .field.radio .field_help {
   margin-left: 0px;
+}
+aside form {
+  overflow-x: hidden;
+}
+aside form .field label {
+  float: inherit;
 }
 
 #profile-edit-links-end {
